@@ -1,0 +1,62 @@
+input.ng-untouched{
+    background-color: rgb(255, 255, 255) ;
+}
+
+input.ng-touched{
+    background-color: lightsalmon ;
+}
+
+input.ng-pristine{
+    border: double 5px pink;
+}
+
+input.ng-dirty{
+    border: dashed 5px blue;
+}
+
+input.ng-valid{
+    border: green 5px solid;
+}
+
+input.ng-invalid{
+    border: rgb(8, 8, 8) 2px solid;
+}
+
+.myColor{
+    color: rgb(255, 1, 1);
+}
+
+input{
+    width: 50%;
+    margin-left: 25%;
+}
+
+b{
+    margin-left: 25%;
+    text-transform: uppercase;
+}
+
+
+
+label{
+    margin-left: 25%;
+    text-transform: uppercase;
+    color: wheat;
+}
+
+h2{
+    margin-left: 45%;
+}
+
+.forms{
+    border: 2px black solid;
+    width: 70%;
+    margin-left: 15%;
+    background-color: rgba(0, 0, 0, 0.89);
+    background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+   
+
+}
+
+
+

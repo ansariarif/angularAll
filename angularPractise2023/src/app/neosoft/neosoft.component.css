@@ -1,0 +1,45 @@
+/* section{
+    background-color: black;
+    text-align: center;
+    color: white;
+} */
+
+
+li{
+    display: inline-block;
+    border: 2px red solid;
+    padding: 20px;
+}
+
+.borderClass{
+    border: 5px dashed red;
+    border-radius: 30px;
+}
+
+.decorateClass{
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+.service{
+    display: inline-block;
+    border: 2px red solid;
+    padding: 20px;
+    background-color: aqua;   
+    width: 60%;
+    padding: 5%;
+}
+
+.display{
+    display: inline-block;
+    border: 2px red solid;
+    padding: 20px;
+    background-color:blue;   
+    width: 10%;
+}
+
+
+button{
+    background-color: red;
+}

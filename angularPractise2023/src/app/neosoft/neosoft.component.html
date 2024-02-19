@@ -1,0 +1,74 @@
+<p><b>Directives</b></p>
+
+
+<section>     
+    
+    <section>
+        <label >Enter age:</label>
+        <input type="number" [(ngModel)]="age">
+      </section>
+      <i>Age is: {{age}}</i>
+      <p *ngIf="age>=18; else elseblock">
+        <b>you are valid for age</b>
+      </p>
+      
+      <ng-template #elseblock>
+        <div>
+        <b> you are not valid voter</b>
+      </div>
+      </ng-template>
+
+
+    
+      
+      <!-- <li *ngFor="let num of numArray ; first as isFirst">
+        <span *ngIf="isFirst">{{num}}</span>
+      </li>
+      
+      
+      <li *ngFor="let num of numArray ; last as islast">
+        <span *ngIf="islast">{{num}}</span>
+      </li>
+      
+      <br><hr> -->
+
+
+      <section>
+        <ul>
+          <li *ngFor="let num of numArray">{{num}}</li> <br>
+          
+        </ul>
+        <h2>use of switch case</h2>
+        <h3>1: push 2: pop</h3>
+        <input type="number" [(ngModel)]="choice"> <!--auto syn-->
+        <div [ngSwitch]="choice">
+        
+          <div *ngSwitchCase="1">
+            <label >enter the number to push</label>
+            <input type="number" #element>  <!--never get syn-->
+            <button (click)="addelement(element.value)">PUSH</button>
+          </div>
+      
+          <div *ngSwitchCase="2">
+            <span >removed element:</span>{{removeElement()}}
+          </div>
+          <div *ngSwitchDefault> <b>not valid</b> </div>
+        </div>
+      </section>
+      
+      <hr>
+
+
+      <section class="service">
+
+        <section>
+            <h2>Service provider</h2>
+            <button (click)="increment2()">Increment</button>
+            <br><br>
+            <b class="display">counter is : {{ developerCounter}}</b>
+        </section>
+      </section>
+      
+      
+      
+</section>

@@ -1,0 +1,47 @@
+
+
+<div class = "xob">
+    <div class = "box">
+        <div class ="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+           
+            
+            
+            <div class = "card-body">
+                <form >
+                  
+                    <div class ="input-container">
+                        <label>   email </label><br>
+                        <input
+                        type = "text"
+                        name = "name"
+                        [(ngModel)] = "email.email"
+                        class = "form-control"
+                        placeholder="Enter  email" 
+                        formControlName="name"
+                        >
+                        
+                    </div>
+
+                    
+                    
+                   
+                   
+                    <div class = "box-footer">
+                       
+                        <button type="submit" (click)="emaitltoOtp(email)" class = "btn" >
+                            Submit
+                        </button>
+                      
+                         
+                       
+
+                    </div>
+               
+                </form>
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+
